@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --font1: "Geist Mono", monospace;
+    --font2: "Playfair Display", serif;
+    --cor-principal1: #cc0000;
+    --cor-principal2: #ffd700;
+}
+
+
+/*Main*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    width: 100%;
+}
+
+.saudacao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -50px;
+}
+
+.saudacao #t1{
+    font-family: var(--font2);
+    font-size: 45px;
+    font-weight: bold;
+    color: var(--cor-principal1);
+}
+
+.saudacao #t2{
+    font-family: var(--font1);
+    color: #a3a3a3;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.container{
+    background-color: #F8D7DA;
+    width: 25%;
+    border-radius: 25px;
+    border: 2px solid #a3a3a3;
+    margin-top: 0px;
+}
+
+.container .formulario .texto{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.container .formulario .texto #t1{
+    font-size: 20px;
+    font-family: var(--cor-principal1);
+    color: #cc0000;
+}
+
+.container .formulario .texto #t2{
+    font-family: var(--font1);
+    color: #a3a3a3;
+    font-size: 15px;
+}
+
+.container .formulario .texto #t1{
+    font-family: var(--font1);
+    font-size: 20px;
+    color: #cc0000;
+    font-weight: bold;
+}
+
+.container .formulario #form{
+    display: flex;
+    flex-direction: column;
+    width: 82%;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.container .formulario #form label{
+    font-size: 15px;
+    font-family: var(--font1);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 3px;
+}
+
+.container .formulario #form input{
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: #F8D7DA;
+    padding-left: 12px;
+}
+
+.container .formulario #form #submit{
+    color: white;
+    background-color: #cc0000;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: var(--font1);
+}
+
+.container .formulario #form .log{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.container .formulario #form #login{
+    font-family: var(--font1);
+    color: #a3a3a3;
+    font-size: 12px;
+}
+
+.container .formulario #form #login a{
+    text-decoration: none;
+    color: #cc0000;
+    font-weight: bold;
+}
+
+.container .formulario #form .forget_pass{
+    margin-top: 20px;
+    text-decoration: none;
+    color: #cc0000;
+    font-family: var(--font1);
+    font-size: 13px;
+}

@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+:root{
+    --font1: "Geist Mono", monospace;
+    --font2: "Playfair Display", serif;
+    --cor-principal1: #cc0000;
+    --cor-principal2: #ffd700;
+    --fundo-main: linear-gradient(180deg, #fff 0%, #f8d7da 100%);
+}
+
+.hero {
+    background-color: #CC0000;
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-radius: 15px;
+    width: 99%;
+}
+.hero h1 {
+    font-family: var(--font1);
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.hero p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+main {
+    flex: 1;
+    max-width: 896px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+    width: 100%;
+}
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card {
+    background: white;
+    border: 2px solid #E0E0E0;
+    border-radius: 8px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+.card-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid #E0E0E0;
+}
+.card-header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+.icon-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+.icon-circle.red {
+    background-color: #CC0000;
+    color: white;
+}
+.icon-circle.gold {
+    background-color: #FFD700;
+    color: black;
+}
+.card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #CC0000;
+    margin-bottom: 0.25rem;
+}
+.card-description {
+    font-size: 14px;
+    color: #666666;
+}
+.card-content {
+    padding: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1A1A1A;
+    margin-bottom: 0.5rem;
+}
+input {
+    width: 100%;
+    height: 40px;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 2px solid #E0E0E0;
+    border-radius: 6px;
+    background: white;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+input:focus {
+    outline: none;
+    border-color: #CC0000;
+}
+input:disabled {
+    background-color: #F9FAFB;
+    cursor: not-allowed;
+}
+.button-group {
+    display: flex;
+    gap: 0.75rem;
+    padding-top: 1rem;
+}
+button {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.btn-primary {
+    background-color: #CC0000;
+    color: white;
+    height: 40px;
+}
+.btn-primary:hover {
+    background-color: #990000;
+}
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid #CC0000;
+    color: #CC0000;
+    height: 25px;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+.btn-outline:hover {
+    background-color: #F8D7DA;
+}
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid #E0E0E0;
+    color: #374151;
+}
+.btn-secondary:hover {
+    background-color: #F3F4F6;
+}
+
+.order-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.order-card {
+    border: 2px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 1rem;
+    transition: box-shadow 0.3s;
+}
+.order-card:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+.order-id {
+    font-size: 18px;
+    font-weight: 700;
+    color: #CC0000;
+    margin-bottom: 0.25rem;
+}
+.order-date {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 14px;
+    color: #6B7280;
+}
+.badge {
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+}
+.badge.delivered { background-color: #10B981; }
+.badge.shipped { background-color: #8B5CF6; }
+.badge.confirmed { background-color: #3B82F6; }
+.badge.pending { background-color: #EAB308; }
+
+.order-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+.order-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+.order-item img {
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+.order-item-info { flex: 1; }
+.order-item-name { font-size: 14px; font-weight: 600; }
+.order-item-quantity { font-size: 12px; color: #6B7280; }
+.order-item-price { font-size: 16px; font-weight: 700; color: #CC0000; }
+
+.separator {
+    height: 1px;
+    background-color: #E0E0E0;
+    margin: 0.75rem 0;
+}
+.order-address {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 14px;
+    color: #6B7280;
+    margin-bottom: 0.75rem;
+}
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.order-total-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #374151;
+}
+.order-total-value {
+    font-size: 20px;
+    font-weight: 700;
+    color: #CC0000;
+}
+
+.hidden {
+    display: none;
+}
+.icon {
+    font-style: normal;
+}
+
+@media (max-width: 768px) {
+    .hero h1 { font-size: 36px; }
+    .hero p { font-size: 18px; }
+    .card-header-flex {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+    .button-group { flex-direction: column; }
+    button {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.order-total-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.order-total-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-total-label-small {
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+    font-family: var(--font1);
+}
+
+.order-total-value-small {
+    font-size: 16px;
+    font-weight: 600;
+    color: #374151;
+    font-family: var(--font1);
+}
+
+.order-total-row.final-total {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #E0E0E0;
+}
+
+.order-total-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #CC0000;
+    font-family: var(--font1);
+}
+
+.order-total-value {
+    font-size: 20px;
+    font-weight: 700;
+    color: #CC0000;
+    font-family: var(--font1);
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; 
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.modal-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.modal-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.modal-box h3 {
+    font-family: var(--font2); 
+    color: #cc0000;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.modal-box p {
+    font-family: var(--font1); 
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-cancel {
+    background-color: #e0e0e0;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: var(--font1);
+}
+
+.btn-confirm {
+    background-color: #cc0000;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-family: var(--font1);
+    display: inline-block;
+}
+
+.btn-confirm:hover {
+    background-color: #a30000;
+}
+
+.modal-overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-overlay.hidden .modal-box {
+    transform: scale(0.7);
+}

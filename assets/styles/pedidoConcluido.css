@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --font1: "Geist Mono", monospace;
+    --font2: "Playfair Display", serif;
+    --cor-principal1: #cc0000;
+    --cor-principal2: #ffd700;
+    --fundo-main: linear-gradient(180deg, #fff 0%, #f8d7da 100%);
+}
+
+/* -- MAIN --*/
+
+.container .faixa-pedido{
+    background-color: var(--cor-principal1);
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.container .faixa-pedido #t1 img{
+    width: 30px;
+    height: 30px;
+}
+
+.container .faixa-pedido #t2{
+    color: white;
+    font-family: var(--font2);
+    font-size: 30px;
+}
+
+.container .data-pedido{
+    background-color: #f8d7da;
+    width: 80%;
+    height: auto;
+    margin: 50px 0px 50px 10%;
+    border: 2px solid #a3a3a3;
+    border-radius: 15px;
+}
+
+.container .data-pedido .text{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.container .data-pedido p{
+    color: #cc0000;
+    font-family: var(--font2);
+    font-size: 25px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.container .data-pedido .infos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container .data-pedido .infos .time{
+    width: 145px;
+    height: 130px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .data-pedido .infos .time #t1{
+    font-family: var(--font1);
+    font-size: 12px;
+    color: #a3a3a3;
+    margin-top: 8px;
+}
+
+.container .data-pedido .infos .time #t2{
+    font-family: var(--font1);
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.container .data-pedido .infos .time img{
+    width: 46px;
+    height: 46px;
+}
+
+.container .data-pedido .infos .loc{
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+}
+
+.container .data-pedido .infos .tel{
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+}
+
+/*LOCATION*/
+
+.container .data-pedido .infos .loc{
+    width: 145px;
+    height: 130px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .data-pedido .infos .loc #t1{
+    font-family: var(--font1);
+    font-size: 12px;
+    color: #a3a3a3;
+    margin-top: 8px;
+}
+
+.container .data-pedido .infos .loc #t2{
+    font-family: var(--font1);
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.container .data-pedido .infos .loc img{
+    width: 46px;
+    height: 46px;
+}
+
+/*TELEFONE*/
+
+.container .data-pedido .infos .tel{
+    width: 145px;
+    height: 130px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .data-pedido .infos .tel #t1{
+    font-family: var(--font1);
+    font-size: 12px;
+    color: #a3a3a3;
+    margin-top: 8px;
+}
+
+.container .data-pedido .infos .tel #t2{
+    font-family: var(--font1);
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.container .data-pedido .infos .tel img{
+    width: 46px;
+    height: 46px;
+}
+
+.container .data-pedido .line hr{
+    width: 76%;
+    margin-top: 20px;
+    margin-left: 185px;
+    border: 3px solid a3a3a3;
+}
+
+.container .data-pedido .itens-pedido #texto{
+    font-family: var(--font2);
+    font-size: 25px;
+    position: relative;
+    left: 185px;
+}
+
+.container .data-pedido .itens-pedido .pedido .pedido1{
+    width: 76%;
+    height: 50px;
+    position: relative;
+    left: 185px;
+    top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .data-pedido .itens-pedido .pedido .pedido1 .infped{
+    flex-direction: column;
+}
+
+.container .data-pedido .itens-pedido .pedido .pedido1 #nome-p{
+    font-family: var(--font1);
+    color: black;
+    font-size: 16px;
+    margin: 0;
+}
+
+.container .data-pedido .itens-pedido .pedido .pedido1 #quant{
+    font-family: var(--font1);
+    color: #a3a3a3;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.container .data-pedido .itens-pedido .pedido .pedido1 #valor{
+    position: relative;
+    bottom: 30px;
+    font-family: var(--font1);
+    font-size: 20px;
+}
+
+/*PEDIDO 2*/
+
+.container .data-pedido .itens-pedido .pedido .pedido2{
+    width: 76%;
+    height: 50px;
+    position: relative;
+    left: 185px;
+    top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .data-pedido .itens-pedido .pedido .pedido2 .infped{
+    flex-direction: column;
+}
+
+.container .data-pedido .itens-pedido .pedido .pedido2 #nome-p{
+    font-family: var(--font1);
+    color: black;
+    font-size: 16px;
+    margin: 0;
+}
+
+.container .data-pedido .itens-pedido .pedido .pedido2 #quant{
+    font-family: var(--font1);
+    color: #a3a3a3;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.container .data-pedido .itens-pedido .pedido .pedido2 #valor{
+    position: relative;
+    bottom: 20px;
+    font-family: var(--font1);
+    font-size: 20px;
+}
+
+.container .data-pedido .valores .subtotal{
+    width: 76%;
+    height: 40px;
+    position: relative;
+    left: 185px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .data-pedido .valores .subtotal #t-valor{
+    font-family: var(--font1);
+    color: #a3a3a3;
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+.container .data-pedido .valores .subtotal #valor{
+    color: #1a1a1a;
+    font-family: var(--font1);
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.container .data-pedido .valores .entrega{
+    width: 76%;
+    height: 40px;
+    position: relative;
+    left: 185px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .data-pedido .valores .entrega #t-valor{
+    font-family: var(--font1);
+    color: #a3a3a3;
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+.container .data-pedido .valores .entrega #valor{
+    color: #1a1a1a;
+    font-family: var(--font1);
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.container .data-pedido .valores .total{
+    width: 76%;
+    height: 40px;
+    position: relative;
+    left: 185px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .data-pedido .valores .total #t-valor{
+    font-family: var(--font1);
+    color: var(--cor-principal1);
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.container .data-pedido .valores .total #valor{
+    color: var(--cor-principal1);
+    font-family: var(--font1);
+    font-size: 20px;
+    margin-top: 5px;
+}

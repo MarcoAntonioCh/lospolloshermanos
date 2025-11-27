@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --font1: "Geist Mono", monospace;
+    --font2: "Playfair Display", serif;
+    --cor-principal1: #cc0000;
+    --cor-principal2: #ffd700;
+}
+
+
+
+/*MAIN*/
+
+.container .faixa-carrinho{
+    background-color: var(--cor-principal1);
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container .faixa-carrinho #t1{
+    color: white;
+    font-family: var(--font2);
+    font-size: 30px;
+}
+
+.container .faixa-carrinho #t2{
+    color: white;
+    font-family: var(--font1);
+}
+
+.container .sobre{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 70px;
+}
+
+.container .sobre .frase{
+    display: flex;
+    justify-content: center;
+}
+
+.container .sobre .frase p{
+    font-family: var(--font1);
+    color: black;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.container .sobre .historia{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .sobre .historia .titulo{
+    font-family: var(--font2);
+    color: #cc0000;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.container .sobre .historia p{
+    font-size: 16px;
+    font-family: var(--font1);
+    margin-bottom: 20px;
+}
+
+.container .sobre .valores{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .sobre .valores .titulo{
+    font-family: var(--font2);
+    color: #cc0000;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.container .sobre .valores ul{
+    list-style-type: none;
+}
+
+.container .sobre .valores ul li{
+    font-family: var(--font1);
+    color: a3a3a3;
+    margin-bottom: 10px;
+}

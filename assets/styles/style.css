@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --font1: "Geist Mono", monospace;
+    --font2: "Playfair Display", serif;
+    --cor-principal1: #cc0000;
+    --cor-principal2: #ffd700;
+}
+
+body, html{
+    width: 100%;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(to top, #fbe4e4, #fff);
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    background-color: var(--cor-principal1);
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 10px;
+}
+
+header img{
+    width: 140px;
+    height: 140px;
+    margin-bottom: 10px;
+}
+
+header nav{
+    display: flex;
+    gap: 80px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #fff;
+    font-family: var(--font1);
+    font-size: 21px;
+}
+
+.botoes{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+
+.botoes .cadastro a{
+    text-decoration: none;
+    color: black;
+
+    font-family: var(--font1);
+    background-color: var(--cor-principal2);
+    border-radius: 5px;
+    display: block;
+    padding: 10px 30px;
+    transition: background-color 0.2s ease;
+
+}
+
+.botoes .cadastro a:hover {
+    background-color: #e6c300;
+}
+
+.botoes .login a{
+    text-decoration: none;
+    color: black;
+
+    font-family: var(--font1);
+    background-color: var(--cor-principal2);
+    border-radius: 5px;
+    display: block;
+    padding: 10px 30px;
+    transition: background-color 0.2s ease;
+}
+
+.botoes .login a:hover {
+    background-color: #e6c300; 
+}
+
+/*Botoes Logado*/
+
+.botoes .basket {
+    display: flex;
+    align-items: center;
+}
+
+.botoes .basket img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 0;
+}
+
+.botoes .account {
+    display: flex;
+    align-items: center;
+}
+
+.botoes .account img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 0;
+}
+
+.botoes .btnPedir a {
+    font-family: var(--font1);
+    background-color: var(--cor-principal2);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: background-color 0.2s ease;
+}
+
+.botoes .btnPedir a:hover {
+    background-color: #e6c300;
+}
+
+.basket {
+    position: relative;
+}
+
+#cart-counter {
+    position: absolute;
+    top: -11px;
+    right: -20px; 
+    
+    color: var(--cor-principal1); 
+    border-radius: 50%;
+    color: var(--cor-principal2);
+    width: 22px;
+    height: 22px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 15px;
+    font-weight: bold;
+    font-family: var(--font1);
+    
+}
+
+/*Main*/
+
+main{
+    flex: 1;
+}
+
+/*Footer*/
+
+footer{
+    background-color: var(--cor-principal1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    width: 100%;
+}
+
+footer .tx1{
+    color: white;
+    font-family: var(--font1);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer .tx2{
+    color: white;
+    font-size: 15px;
+    line-height: 10px;
+}
+
+#toast-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1050; 
+    display: flex;
+    flex-direction: column-reverse; 
+    gap: 10px;
+}
+
+.toast-notification {
+    background-color: var(--cor-principal1);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    font-family: var(--font1);
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards, fadeOut 0.5s 2.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+}
