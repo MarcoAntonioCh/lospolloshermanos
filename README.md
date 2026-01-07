@@ -19,4 +19,4 @@
 
 ## ▶️ Instruções para uso:
 
-#### Para utilizar basta verificar se o servidor Apache está executando corretamento, junto com os serviços do Mysql e acessar o localhost no navegador para ter acesso ao site.
+#### Para utilizar basta verificar se o servidor Apache está executando corretamento junto com os serviços do Mysql e acessar o localhost no navegador para ter acesso ao site.
