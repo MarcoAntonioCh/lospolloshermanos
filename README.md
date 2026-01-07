@@ -16,3 +16,7 @@
 ## ⚙️ Instruções para instalação:
 
 #### É necessário ter instalado o XAMPP ou WAMP para que o PHP, Mysql e Apache estejam funcionando e possam acessar e executar o programa corretamente. Após tudo instalado, é preciso clonar ou instalar o projeto e coloca-los dentro da pasta htdocs(se for XAMPP) ou www(se for WAMP). Por fim, é necessário importar o código do arquivo los_pollos_hermanos.sql no PhpMyAdmin para que seja criado o banco juntamente com as inserções dos pedidos.
+
+## ▶️ Instruções para uso:
+
+#### Para utilizar basta verificar se o servidor Apache está executando corretamento, junto com os serviços do Mysql e acessar o localhost no navegador para ter acesso ao site.
